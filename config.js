@@ -77,3 +77,57 @@ textData = textData.batters.batter.reduce(function(memo, textData) {
 }, []);
 
 console.log(JSON.stringify(textData, null, 4));
+
+
+
+var monday = [
+        {
+            'name'     : 'Write a tutorial',
+            'duration' : 180
+        },
+        {
+            'name'     : 'Some web development',
+            'duration' : 120
+        }
+    ];
+ 
+var tuesday = [
+        {
+            'name'     : 'Keep writing that tutorial',
+            'duration' : 240
+        },
+        {
+            'name'     : 'Some more web development',
+            'duration' : 180
+        },
+        {
+            'name'     : 'A whole lot of nothing',
+            'duration'  : 240
+        }
+    ];
+     
+var tasks = [monday, tuesday];
+
+var result = tasks.reduce(function (accumulator, current) {
+                    // console.log(accumulator.concat(current));
+                    return accumulator.concat(current);
+                }).map(function (task) {
+                    // console.log(task.duration  / 60 );
+                    return (task.duration / 60);
+                }).filter(function (duration) {
+                    // console.log(duration);
+                    return duration >= 2;
+                }).map(function (duration) {
+                    console.log(duration);
+                    return duration * 25;
+                }).reduce(function (accumulator, current) {
+                    console.log((+accumulator) + (+current));
+                    return [(+accumulator) + (+current)];
+                }).map(function (dollar_amount) {
+                    console.log("Dollar Ammount: "+ dollar_amount);
+                    return '$' + dollar_amount.toFixed(2);
+                }).reduce(function (formatted_dollar_amount) {
+                    return formatted_dollar_amount;
+                });
+
+console.log("Well Data: "+ result);
