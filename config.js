@@ -140,3 +140,20 @@ console.log("Well Data: "+ result);
 // http://elijahmanor.com/reducing-filter-and-map-down-to-reduce/
 
 // https://danmartensen.svbtle.com/javascripts-map-reduce-and-filter
+
+
+<script>
+var arr2 = [
+    [{ id : 1, name: "a" },{ id : 2, name: "b" }],
+    [{ id : 3, name: "c" },{ id : 4, name: [{
+    	sam:"test",
+        data:"test"
+    }] }]
+] ;
+
+arr2.filter(function( obj ) {
+	console.log(obj);
+    obj.filter(function(data) { if(data.id){ 
+    result = data;}})});
+console.log(result.name[0].sam);
+</script>
