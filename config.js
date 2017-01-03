@@ -131,3 +131,12 @@ var result = tasks.reduce(function (accumulator, current) {
                 });
 
 console.log("Well Data: "+ result);
+
+
+// https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209
+
+// https://www.sitepoint.com/map-reduce-functional-javascript/
+
+// http://elijahmanor.com/reducing-filter-and-map-down-to-reduce/
+
+// https://danmartensen.svbtle.com/javascripts-map-reduce-and-filter
