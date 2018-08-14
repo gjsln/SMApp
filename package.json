@@ -18,10 +18,10 @@
     "grunt-newer": "^1.1.2",
     "grunt-ng-annotate": "^2.0.2",
     "jshint": "^2.6.3",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.5",
     "typescript":"^1.7.3"
   },
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "^4.17.5"
   }
 }
